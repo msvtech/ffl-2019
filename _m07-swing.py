@@ -28,7 +28,12 @@ tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to
 # Drive forward
 # tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
 
+<<<<<<< HEAD
 #! Turn left 45 degrees
 # tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 45)
+=======
+# Turn left 45 degrees
+tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 45)
 
 # front_motor.on_for_degrees(SpeedPercent(100), 5 * 360)
+>>>>>>> master
