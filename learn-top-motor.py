@@ -1,10 +1,10 @@
 #!/usr/bin/env micropython
 
-from ev3dev2.motor import MediumMotor, OUTPUT_D, SpeedPercent
+from ev3dev2.motor import MediumMotor, OUTPUT_C, SpeedPercent
 from ev3dev2.led import Leds
 import time
 
-top_motor = MediumMotor(OUTPUT_D)
+top_motor = MediumMotor(OUTPUT_C)
 leds = Leds()
 
 leds.all_off()
