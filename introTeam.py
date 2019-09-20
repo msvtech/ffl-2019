@@ -6,6 +6,7 @@ import time
 
 sound = Sound()
 sound.speak('Welcome to the Sage Canyon Lego Builders. We are Saira, Pallavi, Dylan, Droov, Erik, and Kiran. We are going to kick your butt! Lets go!')
+5
 
 
 
