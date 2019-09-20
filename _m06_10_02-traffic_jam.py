@@ -17,10 +17,8 @@ tank_drive = MoveTank(OUTPUT_A, OUTPUT_B)
 ratio_degrees_to_inches = 360 / 8.44
 rotate90 = 137 / 90.0
 
-# Main Program
+# Mission 6 - Traffic Jam
 
-# Drive forward
-tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
+# Mission 10 - Steel Construction
 
-# Turn left 45 degrees
-tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 45)
+# Mission 02 - Crane

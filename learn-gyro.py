@@ -1,18 +1,29 @@
 #!/usr/bin/env micropython
 
-from ev3dev2.motor import LargeMotor, MediumMotor,OUTPUT_A, OUTPUT_B, SpeedPercent, MoveTank
-from ev3dev2.sensor.lego import GyroSensor, ColorSensor
-from math import cos, radians, degrees
+from ev3dev2.motor import LargeMotor, MediumMotor, SpeedPercent, MoveTank, OUTPUT_A, OUTPUT_B # , OUTPUT_C, OUTPUT_D
+from ev3dev2.sensor.lego import GyroSensor # , ColorSensor, TouchSensor
+from ev3dev2.led import Leds
 import time
+from math import cos, radians, degrees
 import os
 import sys
+
+tank_drive = MoveTank(OUTPUT_A, OUTPUT_B)
+# front_motor = MediumMotor(OUTPUT_C)
+# top_motor = MediumMotor(OUTPUT_D)
+gs = GyroSensor()
+leds = Leds()
+
+ratio_degrees_to_inches = 360 / 8.44
+rotate90 = 137 / 90.0
+
+# Main Program
 
 def main():
     reset_console()
     set_cursor(OFF)
     set_font('Lat15-Terminus24x12')
 
-    gs = GyroSensor()
     # cl = ColorSensor()
     # light = cl.reflected_light_intensity
 

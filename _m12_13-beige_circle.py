@@ -17,10 +17,8 @@ tank_drive = MoveTank(OUTPUT_A, OUTPUT_B)
 ratio_degrees_to_inches = 360 / 8.44
 rotate90 = 137 / 90.0
 
-# Main Program
+# Mission 12 - Beige Circle
 
-# Drive forward
-tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
-
-# Turn left 45 degrees
-tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 45)
+tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 28, brake=True)
+time.sleep(1)
+tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 50, brake=True)
