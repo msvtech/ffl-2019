@@ -27,11 +27,11 @@ tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate90 * 18)
 
 tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11, brake=True)
 
-tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 50, brake=True)
+tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -15, brake=True)
 
-tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate90 * 20)
+tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 50)
 
-tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 10000, brake=True)
+tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -10000, brake=True)
 
 # Drive forward
 # tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
