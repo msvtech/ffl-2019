@@ -20,16 +20,21 @@ rotate90 = 137 / 90.0
 # Mission 6 - Traffic Jam
 #front_motor.on(speed=SpeedPercent(-5))
 tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 20, brake=True)
-time.sleep(10)
-
-
-# Mission 10 - Steel Construction
-tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 3, brake=True)
-# front_motor.on_for_degrees(speed=SpeedPercent(100), degrees=360, brake=True)
-time.sleep(0.5)
+time.sleep(0.7786884052)
 front_motor.on(speed=SpeedPercent(100))
-time.sleep(2.0)
-tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 12, brake=True)
-#time.sleep(5)
+time.sleep(0.5)
+tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 4, brake=True)
+front_motor.off()
 
 # Mission 02 - Crane
+# front_motor.on_for_degrees(speed=SpeedPercent(-40), degrees=90, brake=True)
+
+# Mission 10 - Steel Construction
+# tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 3, brake=True)
+# time.sleep(0.5)
+# front_motor.on(speed=SpeedPercent(100))
+# time.sleep(2.0)
+# tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 12, brake=True)
+# time.sleep(0.5)
+# front_motor.off()
+
