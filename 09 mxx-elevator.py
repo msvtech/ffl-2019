@@ -19,12 +19,11 @@ rotate = 188.0 / 90.0
 
 # Mission 12 - Beige Circle
 
-tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 26, brake=True)
+tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 27, brake=True)
+tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 10)
 time.sleep(1)
-tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 32)
-time.sleep(1)
-tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 23.5, brake=True)
+tank_drive.on_for_degrees(SpeedPercent(80), SpeedPercent(80), ratio_degrees_to_inches * 30, brake=True)
 time.sleep(1)
 tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
-tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 32)
-tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 37, brake=True)
+tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 40)
+tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 50, brake=True)
