@@ -54,9 +54,3 @@ def Traffic():
     #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 4, brake=True)
     time.sleep(0.5)
     tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -50, brake=True)
-
-# Run Program
-while not ts.value():
-    time.sleep(0.1)
-Crane()
-Traffic()
