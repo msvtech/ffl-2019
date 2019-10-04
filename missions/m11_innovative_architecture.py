@@ -27,7 +27,7 @@ def m11_InnovativeArchitecture():
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
 
     # Turn left 45 degrees
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 45)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 45)
 
     # Drive Forward
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 10.5, brake=True)
@@ -38,5 +38,5 @@ def m11_InnovativeArchitecture():
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(-30), ratio_degrees_to_inches * 10.5, brake=True)
 
     # Turn Right 45 degrees
-    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate90 * 45)
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 45)
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(-30), ratio_degrees_to_inches * 16, brake=True)

@@ -23,17 +23,17 @@ def m07_Swing():
     # Mission 7 - Swing
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 58)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 58)
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 40, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate90 * 18)
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 18)
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11, brake=True)
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -50, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate90 * 20)
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 20)
 
 
     tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -10000, brake=True)
@@ -42,6 +42,6 @@ def m07_Swing():
     # tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
 
     #! Turn left 45 degrees
-    # tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate90 * 45)
+    # tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 45)
 
     # front_motor.on_for_degrees(SpeedPercent(100), 5 * 360)
