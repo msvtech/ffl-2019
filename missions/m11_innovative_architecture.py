@@ -23,20 +23,16 @@ def m11_InnovativeArchitecture():
     # Mission 11 - Innovative Architecture
     # ####################################
 
-    # Drive forward
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16, brake=True)
-
-    # Turn left 45 degrees
     tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 45)
 
     # Drive Forward
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 10.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 18, brake=True)
 
     time.sleep(1)
 
     # Drive Backwards
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(-30), ratio_degrees_to_inches * 10.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(-30), ratio_degrees_to_inches * 18, brake=True)
 
     # Turn Right 45 degrees
-    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 45)
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(-30), ratio_degrees_to_inches * 16, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 38)
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(-30), ratio_degrees_to_inches * 8, brake=True)

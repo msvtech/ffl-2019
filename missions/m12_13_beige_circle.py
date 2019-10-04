@@ -40,7 +40,7 @@ def m12_BeigeCircleStacked():
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 27, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 45)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 49)
     time.sleep(1)
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 23.5, brake=True)
     time.sleep(1)

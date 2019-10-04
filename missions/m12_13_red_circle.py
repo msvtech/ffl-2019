@@ -23,9 +23,11 @@ def m12_RedCircle():
     # Mission 12 - Red Circle
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 28, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 12, brake=True)
     time.sleep(1)
-
+    tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(-10), rotate * 25)
+    time.sleep(1)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 14, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 50, brake=True)
     time.sleep(1)
 
