@@ -13,32 +13,12 @@ front_motor = MediumMotor(OUTPUT_C)
 # top_motor = MediumMotor(OUTPUT_D)
 # gs = GyroSensor()
 # leds = Leds()
-ts = TouchSensor();
+ts = TouchSensor()
 
 ratio_degrees_to_inches = 360 / 8.44
 rotate = 135.0 / 90.0
 
-def Crane():
-    # ####################################
-    # Mission 02 - Crane Part 1
-    # ####################################
-
-    # Drive to Crane
-    front_motor.on_for_degrees(speed=SpeedPercent(50), degrees=90, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 90)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 20.5, brake=True)
-
-    # Drop attachment to lower crane lever
-    front_motor.on_for_degrees(speed=SpeedPercent(-10), degrees=45, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(10), ratio_degrees_to_inches * -5, brake=True)
-
-    # Drive backwards to get in position for Traffic Jam
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -14.5, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 100)
-
-
-def Traffic():
+def m06_TrafficJam():
     # ####################################
     # Mission 6 - Traffic Jam
     # ####################################

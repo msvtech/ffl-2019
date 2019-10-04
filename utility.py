@@ -8,7 +8,7 @@ from ev3dev2.sensor.lego import TouchSensor
 ON = True
 OFF = False
 
-ts = TouchSensor();
+ts = TouchSensor()
 
 def wait_for_button_with_message(msg):
     print_message(msg + '...')
