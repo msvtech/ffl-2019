@@ -18,31 +18,15 @@ ts = TouchSensor()
 ratio_degrees_to_inches = 360 / 8.44
 rotate = 135.0 / 90.0
 
-def m12_BeigeCircle():
+def m08_Elevator():
     # ####################################
-    # Mission 12 - Beige Circle
-    # ####################################
-
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 26, brake=True)
-    time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 45)
-    time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 23.5, brake=True)
-    time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 45)
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 37, brake=True)
-
-
-def m12_BeigeCircleStacked():
-    # ####################################
-    # Mission 12 - Beige Circle Stacked
+    # Mission 8 - Elevator
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 27, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 45)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 14)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 23.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(80), SpeedPercent(80), ratio_degrees_to_inches * 30, brake=True)
     time.sleep(1)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 56)
