@@ -24,9 +24,9 @@ def m08_Elevator():
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 27, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 14)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 16)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(80), SpeedPercent(80), ratio_degrees_to_inches * 30, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(90), SpeedPercent(90), ratio_degrees_to_inches * 31, brake=True)
     time.sleep(1)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 56)
