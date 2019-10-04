@@ -23,6 +23,13 @@ def m06_TrafficJam():
     # Mission 6 - Traffic Jam
     # ####################################
 
+    # front_motor.on_for_degrees(speed=SpeedPercent(-50), degrees=10, brake=True)
+
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 12, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 45)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 3, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 15)
+
     front_motor.on(speed=SpeedPercent(-5))
     time.sleep(0.25)
     tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 18, brake=True)
