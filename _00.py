@@ -7,6 +7,7 @@ from missions.m02_crane                     import m02_Crane_Part1, m02_Crane_Pa
 from missions.m06_traffic_jam               import m06_TrafficJam
 from missions.m07_swing                     import m07_Swing
 from missions.m08_elevator                  import m08_Elevator
+from missions.m09_safetyfactor              import m09_SafetyFactor
 from missions.m10_steel_construction        import m10_SteelConstruction
 from missions.m11_innovative_architecture   import m11_InnovativeArchitecture
 from missions.m12_13_white_circle           import m12_WhiteCircle
@@ -20,11 +21,10 @@ def main():
 
     #wait_for_button_with_message('Crane 1');         m02_Crane_Part1()
     #wait_for_button_with_message('Traffic');         m06_TrafficJam()
-    wait_for_button_with_message('Swing');            m07_Swing()
-    wait_for_button_with_message('Swing');            m07_Swing()
-    wait_for_button_with_message('Swing');            m07_Swing()
+    #wait_for_button_with_message('Swing');            m07_Swing()
     #wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
-    #wait_for_button_with_message('Elevator');        m08_Elevator()
+    wait_for_button_with_message('Elevator');         m08_Elevator()
+    wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
     #wait_for_button_with_message('White Circle');    m12_WhiteCircle()
     #wait_for_button_with_message('Beige Circle');    m12_BeigeCircleStacked()
     #wait_for_button_with_message('Red Circle');      m12_RedCircle()
