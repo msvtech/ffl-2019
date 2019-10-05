@@ -16,10 +16,12 @@ from missions.m12_13_red_circle             import m12_RedCircle
 def main():
     reset_console()
     set_cursor(OFF)
-    set_font('Lat15-Terminus24x12')
+    set_font('Lat15-Terminus32x16')
 
     #wait_for_button_with_message('Crane 1');         m02_Crane_Part1()
     #wait_for_button_with_message('Traffic');         m06_TrafficJam()
+    wait_for_button_with_message('Swing');            m07_Swing()
+    wait_for_button_with_message('Swing');            m07_Swing()
     wait_for_button_with_message('Swing');            m07_Swing()
     #wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
     #wait_for_button_with_message('Elevator');        m08_Elevator()

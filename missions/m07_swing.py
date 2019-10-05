@@ -23,9 +23,25 @@ def m07_Swing():
     # Mission 7 - Swing
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 58)
+    front_motor.on_for_degrees(speed=SpeedPercent(-10), degrees=85)
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 40, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 44, brake=True)
+
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 20)
+
+    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * 6, brake=True)
+
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -12, brake=True)
+
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * -20)
+
+    front_motor.on_for_degrees(speed=SpeedPercent(-100), degrees=-100)
+
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -50, brake=True)
+
+    front_motor.off(brake=False)
+    return
+
 
     tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 18)
 
