@@ -20,7 +20,7 @@ rotate = 135.0 / 90.0
 
 def m09_SafetyFactor():
     # ####################################
-    # Mission 8 - Elevator
+    # Mission 9 - Saftey Factor
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 27, brake=True)
