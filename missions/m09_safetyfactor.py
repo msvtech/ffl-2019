@@ -18,16 +18,17 @@ ts = TouchSensor()
 ratio_degrees_to_inches = 360 / 8.44
 rotate = 135.0 / 90.0
 
-def m08_Elevator():
+def m09_SafetyFactor():
     # ####################################
     # Mission 8 - Elevator
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 27, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 19)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 27, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 12)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 32.5, brake=True)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(95), SpeedPercent(95), ratio_degrees_to_inches * 31, brake=True)
-    time.sleep(1)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 30)
+
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 20)
+    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 56)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 50, brake=True)
