@@ -24,11 +24,12 @@ def m09_SafetyFactor():
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 27, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 12)
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 32.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(20), SpeedPercent(-20), rotate * 3.8)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 30.5, brake=True)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 30)
+    tank_drive.on_for_degrees(SpeedPercent(-80), SpeedPercent(80), rotate * 33)
+    tank_drive.on_for_degrees(SpeedPercent(80), SpeedPercent(-80), rotate * 33)
 
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 56)
+    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 30.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 3.5)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 50, brake=True)
