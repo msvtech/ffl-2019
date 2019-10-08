@@ -25,18 +25,25 @@ def m06_TrafficJam():
 
     # front_motor.on_for_degrees(speed=SpeedPercent(-50), degrees=10, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 12, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 45)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 3, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 15)
+    #tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * 20, brake=True)
+    #tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 45)
+    #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 3, brake=True)
+    #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 15)
 
     front_motor.on(speed=SpeedPercent(-5))
     time.sleep(0.25)
-    tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 18, brake=True)
-    time.sleep(0.25)
-    front_motor.on(speed=SpeedPercent(75))
+    tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 3, brake=False)
     time.sleep(0.75)
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 8, brake=True)
+    front_motor.on(speed=SpeedPercent(100))
+    time.sleep(0.25)
+    front_motor.off(brake=True)
+
+    tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(10), -2, brake=True)
+    front_motor.on(speed=SpeedPercent(100))
+    tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(10), 10, brake=True)
+    time.sleep(0.5)
+
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 10, brake=False)
     front_motor.off()
     #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 4, brake=True)
     time.sleep(0.5)

@@ -6,6 +6,12 @@
             "type": "ev3devBrowser",
             "request": "launch",
             "program": "/home/robot/${workspaceFolderBasename}/${relativeFile}"
+        },
+        {
+            "name": "Download and Run _00",
+            "type": "ev3devBrowser",
+            "request": "launch",
+            "program": "/home/robot/${workspaceFolderBasename}/_00.py"
         }
     ]
 }
