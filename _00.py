@@ -25,7 +25,7 @@ def main():
     wait_for_button_with_message('Swing');            m07_Swing()
     wait_for_button_with_message('Elevator');         m08_Elevator()
     wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
-    wait_for_button_with_message('White Circle');    m12_WhiteCircle()
+    #wait_for_button_with_message('White Circle');    m12_WhiteCircle()
     wait_for_button_with_message('Beige Circle');    m12_BeigeCircleStacked()
     wait_for_button_with_message('Red Circle');      m12_RedCircle()
     wait_for_button_with_message('Architecture');    m11_InnovativeArchitecture()
