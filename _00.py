@@ -22,7 +22,7 @@ def main():
     #wait_for_button_with_message('Crane 1');         m02_Crane_Part1()
     #wait_for_button_with_message('Traffic');         m06_TrafficJam()
     #wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
-    wait_for_button_with_message('Swing');            m07_Swing()
+    #wait_for_button_with_message('Swing');            m07_Swing()
     wait_for_button_with_message('Elevator');         m08_Elevator()
     wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
     #wait_for_button_with_message('White Circle');    m12_WhiteCircle()

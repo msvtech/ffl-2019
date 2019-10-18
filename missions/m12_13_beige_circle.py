@@ -25,9 +25,9 @@ def m12_BeigeCircle():
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 26, brake=True)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 45)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 46.5)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 23.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 23, brake=True)
     time.sleep(1)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 23.5, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 45)
