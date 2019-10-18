@@ -25,9 +25,9 @@ def m12_RedCircle():
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 13, brake=True)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(-10), rotate * 22)
+    tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(-10), rotate * 22.7)
     time.sleep(1)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 16.8, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 50, brake=True)
     time.sleep(1)
 

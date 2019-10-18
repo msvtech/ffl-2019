@@ -30,11 +30,14 @@ def m06_TrafficJam():
     #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 3, brake=True)
     #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 15)
 
-    front_motor.on(speed=SpeedPercent(-5))
-    time.sleep(0.25)
-    tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 3, brake=False)
+    #front_motor.on(speed=SpeedPercent(-5))
+    #time.sleep(0.25)
+    tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 20, brake=True)
     time.sleep(0.75)
-    front_motor.on(speed=SpeedPercent(100))
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate*45)
+    tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 6, brake=True)
+    front_motor.on(speed=SpeedPercent(75))
+    tank_drive.on_for_degrees(SpeedPercent(75), SpeedPercent(75), ratio_degrees_to_inches * 4, brake=True)
     time.sleep(0.25)
     front_motor.off(brake=True)
 
