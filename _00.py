@@ -14,22 +14,23 @@ from missions.m12_13_white_circle           import m12_WhiteCircle
 from missions.m12_13_beige_circle           import m12_BeigeCircle, m12_BeigeCircleStacked
 from missions.m12_13_red_circle             import m12_RedCircle
 
-def main():
+def main(startAt):
     reset_console()
     set_cursor(OFF)
     set_font('Lat15-TerminusBold32x16')
 
-    #wait_for_button_with_message('Crane 1');         m02_Crane_Part1()
-    wait_for_button_with_message('Traffic');         m06_TrafficJam()
-    #wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
-    wait_for_button_with_message('Swing');            m07_Swing()
-    wait_for_button_with_message('Elevator');         m08_Elevator()
-    wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
-    #wait_for_button_with_message('White Circle');    m12_WhiteCircle()
-    wait_for_button_with_message('Beige Circle');    m12_BeigeCircleStacked()
-    wait_for_button_with_message('Red Circle');      m12_RedCircle()
-    wait_for_button_with_message('Architecture');    m11_InnovativeArchitecture()
-    wait_for_button_with_message('Elevated Places'); m01_ElevatedPlaces()
+    #if startAt <=  1 : wait_for_button_with_message('Crane 1');         m02_Crane_Part1()
+    #if startAt <=  1 : wait_for_button_with_message('Traffic');         m06_TrafficJam()
+    #if startAt <=  1 : wait_for_button_with_message('White Circle');    m12_WhiteCircle()
+
+    if startAt <=  1 : wait_for_button_with_message('Swing');            m07_Swing()
+    if startAt <=  2 : wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
+    if startAt <=  3 : wait_for_button_with_message('Elevator');         m08_Elevator()
+    if startAt <=  4 : wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
+    if startAt <=  5 : wait_for_button_with_message('Beige Circle');    m12_BeigeCircleStacked()
+    if startAt <=  6 : wait_for_button_with_message('Red Circle');      m12_RedCircle()
+    if startAt <=  7 : wait_for_button_with_message('Architecture');    m11_InnovativeArchitecture()
+    if startAt <=  8 : wait_for_button_with_message('Elevated Places'); m01_ElevatedPlaces()
 
 if __name__ == '__main__':
-    main()
+    main(1)
