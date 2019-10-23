@@ -24,17 +24,17 @@ def m02_Crane_Part1():
     # ####################################
 
     # Drive to Crane
-    front_motor.on_for_degrees(speed=SpeedPercent(50), degrees=90, brake=True)
+    #front_motor.on_for_degrees(speed=SpeedPercent(50), degrees=90, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 90)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 20.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 22, brake=True)
 
     # Drop attachment to lower crane lever
-    front_motor.on_for_degrees(speed=SpeedPercent(-10), degrees=45, brake=True)
+    #front_motor.on_for_degrees(speed=SpeedPercent(-10), degrees=45, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(10), SpeedPercent(10), ratio_degrees_to_inches * -5, brake=True)
 
     # Drive backwards to get in position for Traffic Jam
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -14.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -30, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 100)
 
 def m02_Crane_Part2():
