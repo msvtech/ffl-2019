@@ -26,7 +26,7 @@ def m02_Crane_Part1():
     # Drive to Crane
     #front_motor.on_for_degrees(speed=SpeedPercent(50), degrees=90, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 90)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 80)
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 22, brake=True)
 
     # Drop attachment to lower crane lever
