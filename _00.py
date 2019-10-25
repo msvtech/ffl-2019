@@ -27,8 +27,8 @@ def main(startAt):
 
     if startAt <=  1 : wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
     if startAt <=  2 : wait_for_button_with_message('Swing');            mxx_Swing()
-    if startAt <=  3 : wait_for_button_with_message('Elevator');         m08_Elevator()
-    if startAt <=  4 : wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
+    # if startAt <=  3 : wait_for_button_with_message('Elevator');         m08_Elevator()
+    # if startAt <=  4 : wait_for_button_with_message('SafetyFactor');     m09_SafetyFactor()
     if startAt <=  5 : wait_for_button_with_message('Beige Circle');    m12_BeigeCircleStacked()
     if startAt <=  6 : wait_for_button_with_message('Red Circle');      m12_RedCircle()
     if startAt <=  7 : wait_for_button_with_message('Architecture');    m11_InnovativeArchitecture()
