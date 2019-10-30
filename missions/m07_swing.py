@@ -25,11 +25,11 @@ def m07_Swing():
 
     tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 45, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(100), rotate * 15)
-    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 12, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 16.5, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 13, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -15, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -25, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(100), rotate * -20)
+    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(100), rotate * -20, brake=True)
 
     tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -55, brake=True)

@@ -23,6 +23,6 @@ def m01_ElevatedPlaces():
     # Mission 1 - Elevated Places
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 50)
-    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 71)
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(-100), ratio_degrees_to_inches * 40)
+    tank_drive.on_for_degrees(SpeedPercent(45), SpeedPercent(45), ratio_degrees_to_inches * 47, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 74, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(-50), ratio_degrees_to_inches * 39.5, brake=True)

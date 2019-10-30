@@ -44,11 +44,11 @@ def m02_Crane_Part2():
 
     # Drive to Crane
     # front_motor.off(brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 9.5, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(-50), rotate * 83)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 9.25, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(-30), rotate * 90, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 19.5, brake=True)
     # front_motor.on_for_degrees(speed=SpeedPercent(40), degrees=90, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -10.0, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(-100), rotate * -100)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(-100), rotate * -120, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -25, brake=True)
     # front_motor.off(brake=False)

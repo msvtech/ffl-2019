@@ -23,14 +23,14 @@ def main(startAt):
     # if startAt <=  1 : wait_for_button_with_message('Traffic');         m06_TrafficJam()
     # if startAt <=  3 : wait_for_button_with_message('Elevator');        m08_Elevator()
     # if startAt <=  4 : wait_for_button_with_message('SafetyFactor');    m09_SafetyFactor()
+    # if startAt <=  6 : wait_for_button_with_message('White Circle');    m12_WhiteCircle()
 
     if startAt <=  1 : wait_for_button_with_message('Crane 2');         m02_Crane_Part2()
     if startAt <=  2 : wait_for_button_with_message('Swing');           m07_Swing()
     if startAt <=  3 : wait_for_button_with_message('Beige Circle');    m12_BeigeCircle()
     if startAt <=  4 : wait_for_button_with_message('Red Circle');      m12_RedCircle()
     if startAt <=  5 : wait_for_button_with_message('Architecture');    m11_InnovativeArchitecture()
-    if startAt <=  6 : wait_for_button_with_message('White Circle');    m12_WhiteCircle()
-    if startAt <=  7 : wait_for_button_with_message('Elevated Places'); m01_ElevatedPlaces()
+    if startAt <=  6 : wait_for_button_with_message('Elevated Places'); m01_ElevatedPlaces()
 
 if __name__ == '__main__':
     main(0)
