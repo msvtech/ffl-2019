@@ -24,5 +24,5 @@ def m01_ElevatedPlaces():
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(45), SpeedPercent(45), ratio_degrees_to_inches * 47, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 74, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-20), SpeedPercent(20), rotate * 75, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(-50), ratio_degrees_to_inches * 39.5, brake=True)
