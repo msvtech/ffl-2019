@@ -23,12 +23,12 @@ def m12_WhiteCircle():
     # Mission 12 - White Circle
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(-40), rotate * 52, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(-40), rotate * 48, brake=True)
 
     # Drive Forward
     tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 17.6, brake=True)
 
-    time.sleep(1)
+    time.sleep(0.25)
 
     # Drive Backwards
     tank_drive.on_for_degrees(SpeedPercent(-40), SpeedPercent(-40), ratio_degrees_to_inches * 18, brake=True)
